@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Memoery Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+	<link rel="icon"  href="N.png">
+    <style>
+        * {
+            margin: 0;
+	        padding: 0;
+	        box-sizing: border-box;
+            list-style: none;
+        }
+
+        .main {
+            width: 484px;
+            margin: 30px auto;
+            background-color: deeppink;
+            overflow: hidden;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: tahoma;
+        }
+
+        div {
+            border-radius: 5px;
+            /*width: 23%;*/
+            height: 95px;
+            /*background-color: #0ca01a;*/
+            background: url(assets/Moon.gif);
+            float: left;
+            margin: 2%;
+            cursor: pointer;
+            transition: background-color .1s ease-in-out;
+        }
+
+        div:hover {
+            background-color: #066910;
+        }
+
+        img {
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 100px;
+            margin: 0;
+            opacity: 0;
+            transition: opacity .5s ease-in-out;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="first">
+		<nav class="first-n">
+			<label class="logo"><b>Hi<span>.</span>ru</b></label>
+			<ul>
+				<li class="two">
+                    <form action="success.php" class="f2" method="post">
+                        <input type="text" name="Search" placeholder=" search here" >
+                        <button type="submit" name="search" class="e">search</button> 
+                    </form>
+                </li>
+				<li ><a class="three" href="login.php">login</a></li>	
+			</ul>
+		</nav>
+		
+        <hr>
+        <section class="main"></section>
+
+
+        <script src="script.js"></script>
+        <br>
+    </div>
+    <div class="media">
+        <ul>
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-linkedin"></a></li>
+            <li><a href="#" class="fa fa-google"></a></li>
+            
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>
